@@ -44,7 +44,7 @@
            },`
 ### 更新日志介绍
 1.  新增Http拦截器base-http-interceptor.service，主要是增加http请求的头部信息
-    > 更新内容：
+    > (更新内容)[https://github.com/JinGangRed/angular-my-quickly-start/commit/5ae24cf2a3f77b3dec91728594263fa92678a55c]：
     1) 添加services/base-http-interceptor.service(拦截器)、services/base-first-demo.service(一个示例http请求的Service)
     2) 修改app/app-assets/core.module,导入HttpClientModule
     3) 修改app/app.module,增加providers

@@ -3,6 +3,7 @@ import {WelcomePageComponent} from './welcome-page/welcome-page.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {ShareModule} from './share.module';
 import {BrowserModule} from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http';
 
 /**
  * 核心模块，只需要使用一次
@@ -11,6 +12,7 @@ import {BrowserModule} from '@angular/platform-browser';
   imports: [
     ShareModule,
     BrowserModule,
+    HttpClientModule,
   ],
   exports: [
     BrowserModule,
@@ -20,7 +22,7 @@ import {BrowserModule} from '@angular/platform-browser';
   declarations: [
     WelcomePageComponent,
     PageNotFoundComponent
-  ]
+  ],
 })
 export class CoreModule {
   /**

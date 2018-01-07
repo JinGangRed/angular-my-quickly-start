@@ -42,6 +42,13 @@
              path: 'first',
              loadChildren: './first-demo/first-demo.module#FirstDemoModule'
            },`
+### 更新日志介绍
+1.  新增Http拦截器base-http-interceptor.service，主要是增加http请求的头部信息
+    > 更新内容：
+    1) 添加services/base-http-interceptor.service(拦截器)、services/base-first-demo.service(一个示例http请求的Service)
+    2) 修改app/app-assets/core.module,导入HttpClientModule
+    3) 修改app/app.module,增加providers
+    > 更新日期：2018.1.7
 ## 项目使用介绍
   可直接下载该快速启动项目,在此基础上按照使用介绍进行扩展
 ## 个人信息

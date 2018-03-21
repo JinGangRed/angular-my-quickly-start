@@ -1,6 +1,6 @@
-# angular快速开始项目（自定义）
+# angular快速开始项目（自定义）[English](README_EN.md)
 项目基于[Angular CLI](https://github.com/angular/angular-cli) version 1.4.7.   
-可以直接下载使用，参照app/first-demo的实现，用于快速搭建一个基础的、带特性路由的项目。
+可以直接下载使用，参照app/first-demo的实现，用于快速搭建一个基础的、带特性路由和路由守卫的项目。
 ## 项目框架介绍
 1.  目录介绍
   * app目录存放该项目的主要内容

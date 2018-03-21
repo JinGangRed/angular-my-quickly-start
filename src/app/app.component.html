@@ -1,27 +1,37 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="height: 8%">
-    <img style="margin-left: 0px; display: inline" width="40" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-    <h1 style="text-align:center;display: inline">
-      Welcome to {{title}}!
-    </h1>
+<div style="height: 8%;text-align: center">
+    <h2 style="text-align:center;display: inline">
+      欢迎来到我的快速启动项目指南!
+    </h2>
 </div>
 
-<div style="height: 64%">
-  <h1>这里是路由页面展示的地方</h1>
+<div style="height: 18rem;text-align: left">
+  <span>1.访问需要登录才能进入的页面(<strong>请注意地址栏地址</strong>)：<a routerLink="/guide/activate">路由守卫</a></span>
+  <br>
+  <span>2.使用HttpClient发送Http请求，以及使用<strong>拦截器</strong>：<a routerLink="/guide/http">HttpClient</a></span>
+
+</div>
+<div style="background-color: grey;text-align: center">
+  访问路由展示
+</div>
+
+<div style="bottom: 0; border: solid;height: 20rem">
+
   <router-outlet></router-outlet>
 </div>
-<div style="height: 20%">
-  <h4>Here are some links to help you start: </h4>
-  <ul>
-    <li>
-      <a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a>
-    </li>
-    <li>
-      <a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a>
-    </li>
-    <li>
-      <a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a>
-    </li>
-  </ul>
-</div>
+
+<!--<div style="height: 20%">-->
+  <!--<h4>这里有一些帮助性文档 </h4>-->
+  <!--<ul>-->
+    <!--<li>-->
+      <!--<a target="_blank" rel="noopener" href="https://angular.cn">Angular 中文网</a>-->
+    <!--</li>-->
+    <!--<li>-->
+      <!--<a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a>-->
+    <!--</li>-->
+    <!--<li>-->
+      <!--<a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a>-->
+    <!--</li>-->
+  <!--</ul>-->
+<!--</div>-->
 

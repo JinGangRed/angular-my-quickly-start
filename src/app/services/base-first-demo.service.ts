@@ -8,7 +8,7 @@ export class BaseFirstDemoService {
     console.log('BaserFirstDemo had Injected');
   }
   getMethodDemo() {
-    this.http.get('http://47.104.102.37/api/v1/user/login?email=gang.a.jin@capgemini.com').subscribe(
+    this.http.get('http://www.baidu.com').subscribe(
       data => {
         console.log('获得到百度信息');
         console.log(data);

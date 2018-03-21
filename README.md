@@ -49,6 +49,22 @@
     2) 修改app/app-assets/core.module,导入HttpClientModule
     3) 修改app/app.module,增加providers
     > 更新日期：2018.1.7
+2.  添加路由守卫。
+    > 更新内容
+    1)  修改项目结构,添加components文件夹存放系统组件
+    2)  增加路由守卫,在services/route-guard下增加ActivateService路由守卫，并添加权限认证AuthService
+    3)  修改项目首页布局,方便展示项目各部分功能
+    4)  修改welcomeComponent组件,增加loginComponent、guides子模块、httpclientGuideComponent组件、ActivateGuideComponent组件
+    > 更新日期：2018.3.21
+    > 新增模块使用方法:
+    1)  路由守卫.在路由(如app-routing、guide-routing)中,针对需要认证才能访问的组件,添加路由守卫方法如下(guide-routing)：
+      `{
+           path: 'activate',
+           component: ActivateGuideComponent,
+           canActivate: [ActivateService] // 添加此句即可实现
+         },`
+    2) 当访问需要认证的组件时,如果添加了canActivate,那么, 首先判断是否登陆(实例中直接使用点击即可登录)。如果没有登录,在判断AuthService的isLoggedIn为false时,会跳转到登录页面,
+    并对访问的页面做记录,便于用户登录之后跳转。即,将当前请求的页面的URL赋值给AuthService的redirect_url.
 ## 项目使用介绍
   可直接下载该快速启动项目,在此基础上按照使用介绍进行扩展
 ## 个人信息
